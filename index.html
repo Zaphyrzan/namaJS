@@ -7,6 +7,20 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="text" id="nama">
+    <input type="text" id="nama2">
+    <button type="button" onclick="papar();">Papar</button>
+    <span id="hasil"></span>
+
+    <script>
+    function papar() 
+    {
+        let nama = document.getElementById('nama').value;
+        let nama2 = document.getElementById('nama2').value;
+        document.getElementById('hasil').innerHTML = 'Encik ' + nama + ' ' + nama2;
+    }
+    </script>
+
     <h1>DDT4D WAN ZAFIRZAN B. WAN TARMIZAN</h1>
     <h1 onclick="picit()">Picit ler</h1>
 
@@ -15,6 +29,7 @@
         {
             alert("DDT4D Wan Zafirzan b. Wan Tarmizan");
         }
+        
 </script>
 </body>
 </html>
